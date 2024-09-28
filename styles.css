@@ -6,7 +6,16 @@
     font-family: head;
     src: url(fixture-sans-serif-font-family-1726282632-0/Fixture-Condensed-SemiBold.otf);
 }
-
+#v{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 li{
     padding: 5px;
 }
@@ -53,6 +62,7 @@ header span{
     border-radius: 0 0 10px 10px;
 }
 .character{
+    position: relative;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(5,auto);
@@ -278,6 +288,7 @@ section {
     z-index: 999;
 }
 .curse{
+    position: relative;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.637));
     height: auto;
     align-items: center;
@@ -446,7 +457,7 @@ section {
     border-radius:  10px 10px 0 0 ;
 }
 #Vid{
-    background-image: url('');
+    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -471,7 +482,10 @@ section {
     color: red;
     cursor: pointer;
 }
-
+.s1{
+    position: relative;
+    height: 80vh;
+}
 @media (max-width:1200px){
     .switch{
         top: unset;
