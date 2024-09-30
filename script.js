@@ -16,7 +16,6 @@ const mappings = [
     { divId: 'aoi', liId: 'fifteen' }
 ];
 
-//gpt cool shit
 mappings.forEach(mapping => {
     const divElement = document.getElementById(mapping.divId);
     const liElement = document.getElementById(mapping.liId);

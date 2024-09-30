@@ -1,5 +1,5 @@
 # jujutsu-kaisen-landing-page
-yeah 
+
 Step into the "Jujutsu Kaisen" world with this fully responsive fan website! Built with a mobile-first approach, it features a sleek, modern design and seamless dark/light mode toggle to suit any viewing preference. Whether browsing on mobile or desktop, this site ensures an engaging and smooth user experience.
 
     ✨ Key Features:
