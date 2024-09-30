@@ -484,7 +484,7 @@ section {
 }
 .s1{
     position: relative;
-    height: 80vh;
+    height: auto;
 }
 @media (max-width:1200px){
     .switch{
