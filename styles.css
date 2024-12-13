@@ -530,6 +530,7 @@ section {
     }
     .container{
         overflow: auto;
+        scrollbar-width: none;
     }
     .shamans{
         display: block;
