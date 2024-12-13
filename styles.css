@@ -6,6 +6,16 @@
     font-family: head;
     src: url(fixture-sans-serif-font-family-1726282632-0/Fixture-Condensed-SemiBold.otf);
 }
+#v{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 li{
     padding: 5px;
 }
@@ -160,9 +170,9 @@ section {
 .right{
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3,180px);
-    grid-template-rows: repeat(5,100px);
-    gap: 5px;
+    grid-template-columns: repeat(3,12vw);
+    grid-template-rows: repeat(5,15vh);
+    gap: 0.5vh;
     position: relative;
     font-family: head;
 }
@@ -291,9 +301,9 @@ section {
 }
 .curse-left{
     display: grid;
-    grid-template-columns: repeat(3,150px);
-    grid-template-rows: repeat(5,110px);
-    gap: 5px;
+    grid-template-columns: repeat(3,12vw);
+    grid-template-rows: repeat(5,15vh);
+    gap: 0.5vh;
     position: relative;
     font-family: head;
 }
@@ -454,12 +464,12 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 110vh;
+    height: 100vh;
     background-color: black;
+    overflow: hidden;
 }
 #Vid video{ 
-    height: 95vh;
-    width: auto;
+    height: 90vh;
     display: none;
 }
 #danger{
@@ -474,7 +484,10 @@ section {
 }
 .s1{
     position: relative;
-    height: auto;
+    height: fit-content;
+}
+.s1-img{
+    width: 100%;
 }
 @media (max-width:1200px){
     .switch{
@@ -488,6 +501,7 @@ section {
     .container{
         margin: 15px;
         box-shadow: 0 0 10px#345e96;
+        scrollbar-width: none;
     }
     body{
         font-size: 0.8em;
@@ -529,8 +543,8 @@ section {
     .right{
         width: 100%;
         justify-content: center;
-        grid-template-columns: repeat(3,25vw);
-        grid-template-rows: repeat(5,10vh);
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(5,12vh);
     }
     .curse{
         flex-direction: column;
@@ -540,8 +554,8 @@ section {
         order: 2;
         width: 100%;
         justify-content: center;
-        grid-template-columns: repeat(3,25vw);
-        grid-template-rows: repeat(5,10vh);
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(5,12vh);
     }
     .curse-right{
         order: 1;
