@@ -117,6 +117,13 @@ vidEl.addEventListener('click',function(){
 })
 
 
+var loadingScreen = document.querySelector(".loading-screen");
+
+window.addEventListener('load', function() {
+    loadingScreen.style.transition = '0.5s';
+    loadingScreen.style.display = 'none';
+  })
+
 
 
 
