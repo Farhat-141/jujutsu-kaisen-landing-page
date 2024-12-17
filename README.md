@@ -15,9 +15,3 @@ Step into the "Jujutsu Kaisen" world with this fully responsive fan website! Bui
   
 ![screencapture-jjk-website-netlify-app-2024-10-07-19_29_49](https://github.com/user-attachments/assets/d33d2c2f-0951-4803-80b8-3f5b10ff0f8d)
 
-        Phone View :
-
-![screencapture-jjk-website-netlify-app-2024-10-07-19_31_44](https://github.com/user-attachments/assets/af73a977-48ed-4c64-98d3-5ba809e21894)
-![screencapture-jjk-website-netlify-app-2024-10-07-19_31_21](https://github.com/user-attachments/assets/cd794f1e-cdac-40e8-a2e0-8dce99e20a02)
-
-
