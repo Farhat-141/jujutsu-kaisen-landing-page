@@ -12,6 +12,5 @@ Step into the "Jujutsu Kaisen" world with this fully responsive fan website! Bui
 - Check out the live version and explore how anime aesthetics and web design come together! 🌙☀️
 
         Pc View :
-  
 ![screencapture-jjk-website-netlify-app-2024-10-07-19_29_49](https://github.com/user-attachments/assets/d33d2c2f-0951-4803-80b8-3f5b10ff0f8d)
 
