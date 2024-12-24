@@ -54,7 +54,6 @@ mappings2.forEach(mappings2 => {
     const divEl = document.getElementById(mappings2.divId);
     const liEl = document.getElementById(mappings2.liId);
 
-
     divEl.addEventListener('mouseover', function() {
         liEl.style.fontWeight = 'bold';
         liEl.style.color = 'darkred';
@@ -96,13 +95,21 @@ let vidEl = document.getElementById('danger');
 let fire = 'true';
 vidEl.addEventListener('mouseover',function(){
     fire = true;
-    document.getElementById('container').style.boxShadow = '0 0 90px 15px yellow';
+    const container = document.getElementById('container');
+
+// Get the current box-shadow and modify only the color
+const currentBoxShadow = getComputedStyle(container).boxShadow;
+const newBoxShadow = currentBoxShadow.replace(/rgba?\([^)]+\)/, 'red'); // Replace color
+container.style.boxShadow = newBoxShadow;
+
     document.getElementById('container').style.transition = '0.2s';
 })
 
 vidEl.addEventListener('mouseout',function(){
     if(fire){
-        document.getElementById('container').style.boxShadow = '0 0 90px 15px #345e96';
+        const currentBoxShadow = getComputedStyle(container).boxShadow;
+const newBoxShadow = currentBoxShadow.replace(/rgba?\([^)]+\)/, '#345e96'); // Replace color
+container.style.boxShadow = newBoxShadow;
         document.getElementById('container').style.transition = '0.2s';
     }
 })
@@ -111,7 +118,10 @@ vidEl.addEventListener('click',function(){
     fire = false;
     document.getElementById('myvid').style.display = 'block';
     document.getElementById('myvid').play();
-    document.getElementById('container').style.boxShadow = '0 0 90px 15px red';
+    
+const currentBoxShadow = getComputedStyle(container).boxShadow;
+const newBoxShadow = currentBoxShadow.replace(/rgba?\([^)]+\)/, 'red'); // Replace color
+container.style.boxShadow = newBoxShadow;
     document.getElementById('container').style.transition = '0.2s';
     //document.getElementById('danger').style.display = 'none';
 })
@@ -126,3 +136,7 @@ window.addEventListener('load', function() {
     document.querySelector(".switch").style.display = "block";
 
   })
+
+
+
+
