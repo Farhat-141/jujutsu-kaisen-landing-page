@@ -77,35 +77,33 @@ header span{
     position: relative;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
     gap: 10px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: top left;
     color: rgb(255, 255, 255);
-    height: 500px;
+    height: auto;
 }
 .character div img{
     border-bottom: 5px solid #345e96;
     width: 100%;
     height: 100px;
     object-fit:  cover;
+    cursor: pointer;
 }
 .character div{
     align-items: center;
     position: relative;
     align-items: center;
+    padding: 10px 0;
 }
 .character div p{
     margin: 0 auto;
     width: 80%;
 }
-.character div:hover{
-    animation-delay: 0.5s;
-    height: auto;
-    border-color: red;
-    border-radius: 1%;
-}
+
 #mm{
     display: none;
     position: absolute;
@@ -114,7 +112,7 @@ header span{
     height: auto;
     z-index: 99;
 }
-.character div img:hover{
+.character div img:active{
     border-color: transparent;
     transition: 1s;
     height: auto;
@@ -489,10 +487,21 @@ section {
     height: fit-content;
     font-size: xx-large;
     font-weight: 900;
-    padding: 5px 10px;
+    padding: 10px 100px;
+    border-radius: 5px;
     background-color: black;
     color: red;
+    border: 2px solid;
+    box-shadow: 0 0 50px;
+    text-shadow: 0 0 10px ;
     cursor: pointer;
+    transition: 0.5s;
+}
+#danger:hover{
+    box-shadow: none;
+    text-shadow: none;
+    border-color: transparent;
+    transition: 0.2s;
 }
 .s1{
     position: relative;
@@ -537,8 +546,8 @@ section {
     }
 }
 @media (max-width:800px){
-    .character div img:hover{
-        height: 100px;
+    .character {
+        grid-template-columns: repeat(3,1fr);
     }
     .container{
         overflow: auto;
@@ -578,13 +587,28 @@ section {
     #sp{
         width: 100%;
     }
-    .character div img:hover{
-        width: auto;
-    }
+
     .curse{
         font-size: x-small;
     }
     .curse-left div:nth-child(7) h1, .curse-left div:nth-child(9) h1 {
         font-size: x-large;
+    }
+}
+
+@media (max-width:600px){
+    .character {
+        grid-template-columns: repeat(2,1fr);
+        padding: 1.2rem 0.5rem;
+    }
+}
+@media (max-width:500px){
+    .character {
+        grid-template-columns: repeat(1,1fr);
+        padding: 1.5rem;
+    }
+    .character div img{
+        width: 80%;
+        height: auto;
     }
 }
