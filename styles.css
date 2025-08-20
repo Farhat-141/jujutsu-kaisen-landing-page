@@ -47,7 +47,8 @@ li{
     background-color: darkred;
 }
 body{
-    margin: 0;
+    margin: auto;
+    max-width:1400px;
     font-family: Robt;
     position: relative;
     background: rgb(0, 0, 0);
@@ -612,3 +613,4 @@ section {
         height: auto;
     }
 }
+
